@@ -18,6 +18,6 @@ namespace parcial_II_ing_pe
         public Nullable<int> codProd { get; set; }
         public Nullable<int> cant { get; set; }
     
-        public virtual producto producto { get; set; }
+        public producto producto { get; set; }
     }
 }
