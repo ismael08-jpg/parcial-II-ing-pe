@@ -22,21 +22,55 @@ namespace parcial_II_ing_pe.Vistas
             comboCodProd.ValueMember = "codProd";
         }
 
-        public void updateDatagrid()
+
+        public void fillDatagrid()
         {
             guna2DataGridView1.DataSource = null;
-            guna2DataGridView1.DataSource = contexto.producto.ToList();
-
+            guna2DataGridView1.DataSource = contexto.detalle_factura.ToList();
         }
         public FrmDetalleFactura()
         {
             InitializeComponent();
             fillComboProd();
+            fillDatagrid();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+
+            detalle_factura det_fac = new detalle_factura();
+
+            det_fac.correlativo = int.Parse(txtCorrelativo.Text);
+            det_fac.codProd = int.Parse(comboCodProd.SelectedValue.ToString());
+            det_fac.cant = int.Parse(numCantidad.Text);
+
+            //Persist
+
+            contexto.detalle_factura.Add(det_fac);
+            if (contexto.SaveChanges() == 1)
+            {
+                MessageBox.Show("¡Factura Creada Exitosamente!");
+
+            }
+
+
+            //actualziar el grid
+            fillDatagrid();
+
+            //limpiar las cajas de texto
+            clear();
+        }
+
+        private void clear()
+        {
+            txtCorrelativo.Clear();
+            comboCodProd.SelectedIndex = -1; //Items.Clear()
+            numCantidad.ResetText();   
         }
     }
 }

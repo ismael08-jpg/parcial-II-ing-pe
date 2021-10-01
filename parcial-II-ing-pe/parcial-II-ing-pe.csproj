@@ -107,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vistas\FrmDetalleFactura.resx">
       <DependentUpon>FrmDetalleFactura.cs</DependentUpon>
@@ -143,6 +144,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\agregar-archivo1.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\basura.png" />
+    <None Include="Resources\editar %281%29.png" />
+    <None Include="Resources\agregar-archivo.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
