@@ -144,6 +144,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\salida.png" />
     <None Include="Resources\agregar-archivo1.png" />
     <None Include="Resources\editar.png" />
     <None Include="Resources\basura.png" />

@@ -29,24 +29,26 @@ namespace parcial_II_ing_pe.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnCreate = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnEdit = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.numCantidad = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.comboCodProd = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtCorrelativo = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnCreate = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -97,89 +99,32 @@ namespace parcial_II_ing_pe.Vistas
             this.tabPage1.Text = "Detalle Factura";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnCreate
-            // 
-            this.btnCreate.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnCreate.CheckedState.Parent = this.btnCreate;
-            this.btnCreate.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnCreate.HoverState.Parent = this.btnCreate;
-            this.btnCreate.Image = global::parcial_II_ing_pe.Properties.Resources.agregar_archivo1;
-            this.btnCreate.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnCreate.ImageRotate = 0F;
-            this.btnCreate.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCreate.Location = new System.Drawing.Point(572, 135);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnCreate.PressedState.Parent = this.btnCreate;
-            this.btnCreate.ShadowDecoration.Parent = this.btnCreate;
-            this.btnCreate.Size = new System.Drawing.Size(64, 54);
-            this.btnCreate.TabIndex = 9;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnDelete.CheckedState.Parent = this.btnDelete;
-            this.btnDelete.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Image = global::parcial_II_ing_pe.Properties.Resources.basura;
-            this.btnDelete.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnDelete.ImageRotate = 0F;
-            this.btnDelete.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDelete.Location = new System.Drawing.Point(688, 135);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnDelete.PressedState.Parent = this.btnDelete;
-            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(64, 54);
-            this.btnDelete.TabIndex = 8;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnEdit.CheckedState.Parent = this.btnEdit;
-            this.btnEdit.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnEdit.HoverState.Parent = this.btnEdit;
-            this.btnEdit.Image = global::parcial_II_ing_pe.Properties.Resources.editar;
-            this.btnEdit.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnEdit.ImageRotate = 0F;
-            this.btnEdit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEdit.Location = new System.Drawing.Point(632, 135);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnEdit.PressedState.Parent = this.btnEdit;
-            this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
-            this.btnEdit.Size = new System.Drawing.Size(64, 54);
-            this.btnEdit.TabIndex = 7;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.Gray;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.Black;
             this.guna2DataGridView1.Location = new System.Drawing.Point(61, 195);
@@ -287,13 +232,89 @@ namespace parcial_II_ing_pe.Vistas
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.guna2ImageButton1);
             this.tabPage2.Location = new System.Drawing.Point(184, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(862, 448);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Salir";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnCreate.CheckedState.Parent = this.btnCreate;
+            this.btnCreate.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnCreate.HoverState.Parent = this.btnCreate;
+            this.btnCreate.Image = global::parcial_II_ing_pe.Properties.Resources.agregar_archivo1;
+            this.btnCreate.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnCreate.ImageRotate = 0F;
+            this.btnCreate.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnCreate.Location = new System.Drawing.Point(572, 135);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnCreate.PressedState.Parent = this.btnCreate;
+            this.btnCreate.ShadowDecoration.Parent = this.btnCreate;
+            this.btnCreate.Size = new System.Drawing.Size(64, 54);
+            this.btnCreate.TabIndex = 9;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnDelete.CheckedState.Parent = this.btnDelete;
+            this.btnDelete.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnDelete.HoverState.Parent = this.btnDelete;
+            this.btnDelete.Image = global::parcial_II_ing_pe.Properties.Resources.basura;
+            this.btnDelete.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnDelete.ImageRotate = 0F;
+            this.btnDelete.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDelete.Location = new System.Drawing.Point(688, 135);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnDelete.PressedState.Parent = this.btnDelete;
+            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
+            this.btnDelete.Size = new System.Drawing.Size(64, 54);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnEdit.CheckedState.Parent = this.btnEdit;
+            this.btnEdit.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnEdit.HoverState.Parent = this.btnEdit;
+            this.btnEdit.Image = global::parcial_II_ing_pe.Properties.Resources.editar;
+            this.btnEdit.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnEdit.ImageRotate = 0F;
+            this.btnEdit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEdit.Location = new System.Drawing.Point(632, 135);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnEdit.PressedState.Parent = this.btnEdit;
+            this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
+            this.btnEdit.Size = new System.Drawing.Size(64, 54);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = global::parcial_II_ing_pe.Properties.Resources.salida;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(376, 139);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.ShadowDecoration.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(103, 108);
+            this.guna2ImageButton1.TabIndex = 0;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // FrmDetalleFactura
             // 
@@ -310,6 +331,7 @@ namespace parcial_II_ing_pe.Vistas
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -327,5 +349,6 @@ namespace parcial_II_ing_pe.Vistas
         private Guna.UI2.WinForms.Guna2ImageButton btnDelete;
         private Guna.UI2.WinForms.Guna2ImageButton btnCreate;
         private Guna.UI2.WinForms.Guna2ComboBox comboCodProd;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }
